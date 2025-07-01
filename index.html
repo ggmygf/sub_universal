@@ -6,9 +6,8 @@ external-controller: :9090
 proxies:
   - {name: aws, server: 133.57.39.66, port: 27170, type: vmess, uuid: 22494fc0-28cb-41fc-864a-c2bb2a25b72e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}}
 proxy-groups:
-  - name: 🚀 节点选择
+  - name: 点选择
     type: select
     proxies:
-      - ♻️ 自动选择
       - DIRECT
       - aws
